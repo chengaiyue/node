@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const multer = require('multer');
 
-let objMulter = multer({dest: './www/upload'}); // dest 指定文件上传路径
+let objMulter = multer({dest: '../www/upload'}); // dest 指定文件上传路径
 
 let server = express();
 server.use(objMulter.any());
